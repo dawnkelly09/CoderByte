@@ -1,0 +1,27 @@
+First Reverse
+HIDE QUESTION
+Have the function FirstReverse(str) take the str parameter being passed and return the string in reversed order. For example: if the input string is "Hello World and Coders" then your program should return the string sredoC dna dlroW olleH.
+
+function FirstReverse(str) { 
+
+//var string will be the word you input that gets reversed when function is called
+
+    var string = "";
+
+//This for loop starts at length -1, aka the last letter of the string, and will decrement //until it reaches 0, aka the 1st letter of the string
+
+    for (var i = str.length - 1; i >= 0; i--) {
+
+//this code will add each new character to the string
+
+        string += str[i];
+    }
+    
+
+  // returns the string  
+  return string; 
+
+}
+   
+// keep this function call here 
+console.log(FirstReverse(readline()));
